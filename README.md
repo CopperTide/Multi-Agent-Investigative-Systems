@@ -22,7 +22,7 @@ measured numbers), `estimated` (a split by characters, or a price ratio) or `unk
 unknown, never as zero).
 
 MAIS produces data only: a JSON report with a published schema. Applications that read it, such as
-[Sculptured](https://usesculptured.com), present it.
+[CopperTide](https://coppertide.ai), present it.
 
 ## Install
 
@@ -39,7 +39,7 @@ mais json ~/.claude/projects/-home-me-Projects-plane
 # Codex sessions from one afternoon
 mais json ~/.codex/sessions/2026/10/15 --since 2026-10-15T13:00:00-04:00 --until 2026-10-15T17:00:00-04:00
 
-# Names, groups and the run budget from the team, sessions linked exactly by a Sculptured run export
+# Names, groups and the run budget from the team, sessions linked exactly by a CopperTide run export
 mais json ~/.claude/projects/-home-me-Projects-plane --team plane.madl.yaml --run plane.sculptured-session.jsonl
 
 # Leave out commands, file paths and message text before sharing a report
@@ -59,7 +59,7 @@ one another with no gap of ten minutes.
 | Claude Code (`~/.claude/projects/<folder>/*.jsonl`, with `subagents/` and `tool-results/`) | usage per API message; tool calls and results; the request Claude Code sent (system prompt, tool definitions, start-up attachments); its own cost figure; compactions; timings |
 | Codex (`~/.codex/sessions/YYYY/MM/DD/*.jsonl`) | usage per model response; tool calls and outputs; plan-window readings; compactions; timings |
 | [MADL](https://github.com/Alexander-Aghili/Multi-Agent-Descriptor-Language) team files | agents, groups, connections, run budget |
-| Sculptured run exports (`sculptured.session/v1`) | which session is which agent; handoffs; plan readings; budget wrap-up and stop |
+| CopperTide run exports (`sculptured.session/v1`) | which session is which agent; handoffs; plan readings; budget wrap-up and stop |
 
 Lines a reader does not know are counted and skipped, never fatal; the report lists how many each
 file had.
